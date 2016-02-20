@@ -12,11 +12,21 @@ public class MainActivity extends AppCompatActivity {
     private Button aboutMeButton;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Bind Widget
+        bindWidget();
+
     } // Main Method
+
+    private void bindWidget() {
+
+        trafficListView = (ListView) findViewById(R.id.listView);
+        aboutMeButton = (Button) findViewById(R.id.button);
+
+    } // bindWidget
 
 } // Main Class นี่คือคลาสหลัก
